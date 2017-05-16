@@ -1,3 +1,10 @@
 <h1>
   {{title}}
 </h1>
+<md-card class="md-car">Simple card</md-card>
+<button md-button (click)="onClick($event)">Click me!</button>
+<div *ngFor=" let user of users"> 
+<md-card class="md-ca md-car">{{user.id}}</md-card>
+<h1>{{user.title}}</h1>
+<h1>{{user.body}}</h1>
+</div>
